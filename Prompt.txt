@@ -1,0 +1,421 @@
+# MASTER PROMPT — NEXTGENAI DEFENCE TECHNOLOGIES
+## Build a World-Class, Futuristic Defence AI Website
+
+Act as a world-class UI/UX designer, senior frontend architect, creative director, and defence technology website specialist.
+
+Completely redesign and upgrade my existing GitHub Pages website into an extremely modern, premium, futuristic enterprise-level defence technology website.
+
+Folder : C:\Users\murtu\OneDrive\Desktop\NextGenAI Defence Technologies
+
+### 1. Company Identity
+
+**Company:** NextGenAI Defence Technologies logo NextGenAIDefence Technologies Logo in the folder
+
+**Brand positioning:** Engineering Intelligent Defence. Securing Tomorrow.
+
+**Website objective:**
+Present NextGenAI as an ambitious defence technology and AI engineering company offering intelligent defence software, autonomous systems research, cybersecurity, advanced sensing, security intelligence, and AI-powered investigation solutions.
+
+The website must appeal to:
+- Government and defence organizations.
+- Corporate security organizations.
+- Defence technology investors.
+- Research and development institutions.
+- Cybersecurity companies.
+- International technology partners.
+- Enterprise clients.
+
+### 2. Design Direction
+
+Create a visually stunning website using a combination of:
+
+- Palantir-inspired intelligence dashboards.
+- Anduril-inspired futuristic defence aesthetics.
+- Premium aerospace and military technology presentation.
+- Modern AI startup design.
+- Enterprise-level typography and layouts.
+
+**Visual identity:**
+- Primary background: Deep black (#05070A).
+- Secondary background: Dark graphite (#0B1017).
+- Accent: Electric cyan (#00D5FF).
+- Secondary accent: Tactical green (#39FF88).
+- Text: White and cool grey.
+- Borders: Subtle dark metallic lines.
+
+Avoid generic templates, excessive gradients, cartoon graphics, and ordinary corporate layouts.
+
+### 3. Hero Section — Extremely Impressive
+
+Create a full-screen cinematic hero section.
+
+Headline:
+
+ENGINEERING INTELLIGENT DEFENCE.
+
+Subtitle:
+
+Building the next generation of AI-powered defence intelligence, autonomous systems, cybersecurity, and advanced security technologies.
+
+Include two premium CTA buttons:
+
+- Explore Our Technologies
+- Contact Our Team
+
+Visual requirements:
+- Animated satellite imagery-inspired background.
+- Futuristic digital terrain.
+- Subtle radar scanning animations.
+- AI data visualization effects.
+- Floating intelligence indicators.
+- Moving coordinate grids.
+- Elegant particle effects.
+- Subtle glowing elements.
+
+Add a sophisticated animated NextGenAI Defence Technologies logo.
+
+Keep all effects optimized for performance.
+
+### 4. Company Introduction
+
+Title: Engineering the Future of Defence Technology.
+
+Describe the company as an emerging technology initiative focused on developing intelligent software platforms, AI-driven security systems, autonomous technology research, and advanced digital infrastructure.
+
+Use an elegant split-screen layout with animated visual elements.
+
+### 5. Technology Divisions — Main Website Section
+
+Create premium individual technology cards for every division.
+
+Each division must have its own cinematic visual, detailed description, features, and dedicated Explore Technology interaction.
+
+**Division 01 — Agentic AI Defence Intelligence** 1. Agentic AI Defence Intelligence in the folder Use this image in a modern way
+
+Develop an advanced AI intelligence platform combining authorized satellite imagery, public information, security reports, and sensor feeds.
+
+Features:
+- Satellite imagery analysis.
+- Real-time security monitoring.
+- Multi-agent AI intelligence.
+- Anomaly detection.
+- Evidence-based intelligence reports.
+- Crisis forecasting.
+- Multilingual intelligence.
+- Secure communications.
+
+**Division 02 — Autonomous Systems & Defensive Robotics** 2. Autonomous Systems Counter-Drone Security in the folder Use this image in a modern way
+
+Focus on intelligent software for uncrewed systems and defensive robotics.
+
+Features:
+- Autonomous inspection software.
+- Uncrewed aircraft monitoring.
+- Search-and-rescue autonomy.
+- Robotic inspection.
+- Perimeter security.
+- Multi-robot coordination.
+- GPS-denied navigation research.
+- Counter-drone detection and monitoring.
+
+**Division 03 — Advanced Sensing & Electronic Protection**3. Advanced Sensing and Electronic Protection in the folder Use this image in a modern way
+
+
+Develop advanced sensing and protective technologies.
+
+Features:
+- AI-powered sensor fusion.
+- Radar and optical sensing analytics.
+- Electronic protection monitoring.
+- Communication resilience.
+- GPS-denied navigation simulation.
+- Predictive equipment diagnostics.
+- Advanced sensing research.
+
+**Division 04 — AI-Powered Security Operations Centre** 4. AI-Powered Security Operations Centre in the folder Use this image in a modern way
+
+Product concept: NextGenAI Sentinel.
+
+Features:
+- AI threat detection.
+- Agentic security investigations.
+- Network monitoring.
+- Endpoint security integration.
+- Threat intelligence.
+- Automated defensive workflows.
+- Incident reporting.
+- Human approval mechanisms.
+- On-premises AI deployment.
+
+**Division 05 — AI Child Protection Intelligence** 5. AI for Child Protection and Criminal Activity Detection in the folder Use this image in a modern way
+
+Develop responsible AI-assisted investigation and child protection technologies for authorized organizations.
+
+Features:
+- Authorized content moderation integration.
+- Detection and classification support.
+- Investigation prioritization.
+- Secure evidence management.
+- Audit trails.
+- Privacy protection.
+- Human investigator review.
+
+**Division 06 — AI Drug-Trafficking Investigation Support** 6. AI Drug-Trafficking Investigation Support in the folder Use this image in a modern way
+
+Features:
+- Logistics anomaly detection.
+- Financial record analysis.
+- Supply-chain intelligence.
+- Investigation relationship visualization.
+- Evidence-linked reporting.
+- Authorized data analysis.
+
+**Division 07 — AI Cybercrime Investigation Platform** 7. AI Cybercrime Investigation Platform in the folder Use this image in a modern way
+
+Features:
+- Phishing campaign detection.
+- Fraud investigation support.
+- Identity theft analysis.
+- Digital evidence management.
+- Malicious infrastructure analysis.
+- Cryptocurrency transaction analysis using lawful sources.
+- Coordinated cyberattack detection.
+
+**Division 08 — Defence & Security Innovation** 8. Defense and Security in the folder Use this image in a modern way
+
+Include ten technology initiatives:
+
+1. AI Defence Intelligence Assistant.
+2. Satellite Change Detection AI.
+3. Counter-Drone Monitoring.
+4. Military Logistics Intelligence.
+5. Predictive Maintenance AI.
+6. Secure Communications Monitoring.
+7. Critical Infrastructure Protection.
+8. Defence Cyber Range.
+9. AI Emergency Coordination.
+10. Defence Supply-Chain Risk Intelligence.
+
+**Division 09 — NextGenAI Defence Intelligence Stack** 9. Defence Intelligence Stack in the folder Use this image in a modern way
+
+Show an impressive interactive architecture visualization with six layers:
+
+1. Data Ingestion.
+2. Data Processing.
+3. AI Intelligence.
+4. Security & Control.
+5. Customer Applications.
+6. Deployment Infrastructure.
+
+Use animated connecting lines, nodes, and interactive architecture layers.
+
+### 6. Dedicated Technology Detail Interactions
+
+Every division must be interactive.
+
+When a visitor clicks Explore Technology:
+- Open a premium detail modal or dedicated detail section.
+- Display a large visual.
+- Show the technology description.
+- Display core capabilities.
+- Explain potential applications.
+- Show potential enterprise customers.
+- Include a Contact About This Technology CTA.
+
+Do not make the cards static.
+
+### 7. Technology Architecture Visualization
+
+Create a dedicated section titled:
+
+THE NEXTGENAI DEFENCE INTELLIGENCE STACK
+
+Show a futuristic 3D-inspired architecture diagram.
+
+Include:
+- Satellite and sensor data.
+- AI processing pipelines.
+- Multi-agent intelligence.
+- Security and access control.
+- Intelligence dashboards.
+- Private cloud and on-premises deployment.
+
+Make the diagram interactive with hover animations and layer highlighting.
+
+### 8. Research & Development
+
+Create a dedicated R&D section covering:
+
+- Agentic AI research.
+- Computer vision.
+- Satellite image analytics.
+- Autonomous navigation research.
+- Defensive robotics.
+- Cybersecurity automation.
+- Sensor fusion.
+- Predictive analytics.
+- Offline and edge AI.
+
+Use premium technical visuals.
+
+### 9. Why NextGenAI?
+
+Create six impressive feature blocks:
+
+- AI-First Engineering.
+- Intelligence-Driven Security.
+- Human-Controlled Systems.
+- Secure Infrastructure.
+- Modular Technology Architecture.
+- Enterprise Deployment Flexibility.
+
+### 10. Contact Section
+
+Create a premium dark contact section.
+
+Heading:
+
+LET'S ENGINEER THE FUTURE TOGETHER.
+
+Description:
+
+Connect with NextGenAI Defence Technologies to discuss enterprise solutions, AI research, technology partnerships, and business opportunities.
+
+**WhatsApp contact:**
+
++92 306 0824762
+
+Implement a functional WhatsApp CTA using:
+
+https://wa.me/923060824762
+
+Include:
+- Contact Our Team.
+- Discuss a Technology.
+- Partnership Enquiries.
+
+Do not invent an email address or office address.
+
+### 11. Navigation
+
+Create a sticky, transparent, futuristic navigation bar.
+
+Logo on the left.
+
+Navigation:
+- Home
+- About
+- Technologies
+- Defence Intelligence Stack
+- Research & Development
+- Contact
+
+Include a highlighted WhatsApp Contact button.
+
+Mobile navigation must be fully responsive.
+
+### 12. Animation & Interaction
+
+Use modern, sophisticated animations:
+
+- Smooth scrolling.
+- Scroll-triggered reveals.
+- Interactive technology cards.
+- Subtle parallax.
+- Animated radar rings.
+- Particle backgrounds.
+- Data-stream animations.
+- Glowing hover borders.
+- Animated statistics only when backed by real data.
+- Elegant page transitions.
+
+Animations must be smooth and professional, not distracting.
+
+### 13. Technical Requirements
+
+My existing project is hosted on GitHub Pages.
+
+Main project directory:
+
+C:\Users\murtu\OneDrive\Desktop\NextGenAI Defence Technologies
+
+Requirements:
+
+- Inspect the existing project before making changes.
+- Preserve GitHub Pages compatibility.
+- Use relative asset paths.
+- Do not introduce backend dependencies.
+- Optimize all images and animations.
+- Implement responsive design for desktop, tablets, and mobile.
+- Use semantic HTML.
+- Follow accessibility best practices.
+- Optimize SEO metadata.
+- Ensure no broken images or navigation links.
+- Keep code modular and maintainable.
+- Ensure the production build works correctly.
+- Do not remove existing useful content.
+
+### 14. Existing Assets — IMPORTANT
+
+Use my existing assets from the project directory.
+
+My logo file is named:
+
+NextGenAIDefence Technologies Logo
+
+I also have dedicated images for the nine technology divisions.
+
+Locate and inspect the available assets.
+
+Use the corresponding images in their respective division cards.
+
+Do not replace my original logo with a random generated logo.
+
+Present the division images using premium image crops, cinematic overlays, subtle animations, and consistent aspect ratios.
+
+Do not use the same image for every division.
+
+If an image cannot be found, create a visually appropriate CSS-based fallback instead of displaying a broken image.
+
+### 15. Footer
+
+Create a sophisticated footer with:
+
+NextGenAI Defence Technologies
+
+Engineering Intelligent Defence. Securing Tomorrow.
+
+Navigation links, technology links, and WhatsApp contact.
+
+Copyright © NextGenAI Defence Technologies | Developed by Murtuza Developer
+
+Developer portfolio:
+
+https://murtuzadeveloper.github.io/
+
+Make Murtuza Developer clickable.
+
+### 16. Final Quality Expectations
+
+The final result must look like a premium international defence technology corporation rather than an ordinary AI startup website.
+
+Prioritize:
+- Exceptional visual hierarchy.
+- Cinematic presentation.
+- Professional corporate credibility.
+- Premium technology imagery.
+- Sophisticated interactions.
+- Clear business communication.
+- Excellent mobile responsiveness.
+
+Do not use fake customer logos, fake military contracts, fabricated certifications, invented statistics, or claims of operational defence deployments.
+
+Clearly present proposed technologies and research concepts as development initiatives rather than already operational products.
+
+Keep all systems focused on lawful, defensive, human-supervised applications.
+
+**FINAL INSTRUCTION:**
+Responsive with all devices
+First inspect my entire existing project and assets. Then redesign the complete website, implement every section, test all interactions, run the production build, and fix any errors.
+
+Do not just provide suggestions or sample code. Actually implement the complete website in my existing project directory, ready for GitHub Pages deployment.

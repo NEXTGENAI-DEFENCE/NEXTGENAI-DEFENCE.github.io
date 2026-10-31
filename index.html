@@ -1,0 +1,1426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NextGenAI Defence Technologies — Engineering Intelligent Defence. Securing Tomorrow.</title>
+  
+  <!-- SEO & Social Meta Tags -->
+  <meta name="description" content="NextGenAI Defence Technologies develops world-class AI-powered defence intelligence, autonomous defensive robotics, cybersecurity operations (Sentinel), advanced sensing, and lawful investigation software.">
+  <meta name="keywords" content="NextGenAI Defence Technologies, defence AI, autonomous systems, cybersecurity, counter-drone security, satellite intelligence, electronic protection, C-UAS, sensor fusion">
+  <meta name="author" content="Murtuza Developer">
+  <meta name="theme-color" content="#05070A">
+  <meta property="og:title" content="NextGenAI Defence Technologies — Engineering Intelligent Defence">
+  <meta property="og:description" content="NextGenAI develops intelligent defence software, autonomous systems research, cybersecurity, advanced sensing, and security intelligence.">
+  <meta property="og:image" content="NextGenAIDefence%20Technologies%20Logo.png">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="NextGenAIDefence%20Technologies%20Logo.png">
+
+  <!-- Google Fonts Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Rajdhani:wght@500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="visitor-counter.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       1. TOP TELEMETRY STATUS BAR
+       ========================================================================== -->
+  <header class="telemetry-ticker" aria-label="System Telemetry">
+    <div class="container telemetry-inner">
+      <div class="telemetry-items">
+        <div class="telemetry-item">
+          <span class="telemetry-label">SYSTEM CLOCK:</span>
+          <span class="telemetry-val" id="telemetryClock">2026-10-31 10:35:00 UTC</span>
+        </div>
+        <div class="telemetry-item">
+          <span class="telemetry-label">SECURITY PROTOCOL:</span>
+          <span class="telemetry-val val-green">AES-256 // QUANTUM-RESISTANT</span>
+        </div>
+        <div class="telemetry-item">
+          <span class="telemetry-label">COORDINATE MESH:</span>
+          <span class="telemetry-val" id="telemetryCoords">LAT 33.6844° N // LON 73.0479° E // ALT 42,050 FT</span>
+        </div>
+      </div>
+      <div class="telemetry-status-badge">
+        <span class="status-dot"></span>
+        <span>DEFENSIVE NETWORKS NOMINAL</span>
+        <span class="telemetry-val" style="margin-left: 6px;" id="telemetryPing">21ms</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       2. STICKY FUTURISTIC NAVIGATION BAR
+       ========================================================================== -->
+  <nav class="navbar" id="mainNavbar">
+    <div class="container nav-container">
+      <a href="#hero" class="nav-brand" aria-label="NextGenAI Defence Technologies Home">
+        <img src="NextGenAIDefence%20Technologies%20Logo.png" alt="NextGenAI Defence Technologies Logo" class="nav-logo-img">
+        <div class="nav-brand-text">
+          <span class="nav-brand-name">NEXTGEN<span>AI</span></span>
+          <span class="nav-brand-sub">DEFENCE TECHNOLOGIES</span>
+        </div>
+      </a>
+
+      <div class="nav-links">
+        <a href="#hero" class="nav-link">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#technologies" class="nav-link">Technologies</a>
+        <a href="#stack" class="nav-link">Defence Stack</a>
+        <a href="#rd" class="nav-link">R&amp;D</a>
+        <a href="#why" class="nav-link">Why NextGenAI</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </div>
+
+      <div class="nav-actions">
+        <a href="https://wa.me/923060824762" target="_blank" rel="noopener" class="btn btn-whatsapp btn-sm">
+          <svg class="btn-icon" viewBox="0 0 24 24"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2z"/></svg>
+          <span>WhatsApp Intel</span>
+        </a>
+      </div>
+
+      <!-- Mobile Menu Toggle Button -->
+      <button class="nav-toggle-btn" id="navToggle" aria-label="Toggle Navigation Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Nav Drawer -->
+  <aside class="mobile-nav" id="mobileNav">
+    <div class="mobile-nav-links">
+      <a href="#hero" class="mobile-nav-link">Home</a>
+      <a href="#about" class="mobile-nav-link">About Initiative</a>
+      <a href="#technologies" class="mobile-nav-link">Technology Divisions</a>
+      <a href="#stack" class="mobile-nav-link">Intelligence Stack</a>
+      <a href="#rd" class="mobile-nav-link">Research &amp; Development</a>
+      <a href="#why" class="mobile-nav-link">Why NextGenAI</a>
+      <a href="#contact" class="mobile-nav-link">Contact &amp; Partnerships</a>
+    </div>
+    <div class="mobile-nav-footer">
+      <a href="https://wa.me/923060824762" target="_blank" rel="noopener" class="btn btn-whatsapp" style="width: 100%;">
+        <svg class="btn-icon" viewBox="0 0 24 24"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2z"/></svg>
+        <span>Connect via WhatsApp</span>
+      </a>
+      <p class="mono" style="font-size: 0.7rem; color: var(--text-muted); margin-top: 14px; text-align: center;">
+        +92 306 0824762 // SECURE TELEMETRY
+      </p>
+    </div>
+  </aside>
+
+  <!-- ==========================================================================
+       3. CINEMATIC HERO SECTION
+       ========================================================================== -->
+  <section class="hero-section" id="hero">
+    <!-- Canvas for terrain grid, particles and neural mesh -->
+    <canvas id="heroCanvas"></canvas>
+
+    <!-- Radar Scanner Rings -->
+    <div class="hero-radar-container" aria-hidden="true">
+      <div class="radar-circle"></div>
+      <div class="radar-circle"></div>
+      <div class="radar-circle"></div>
+      <div class="radar-circle"></div>
+      <div class="radar-sweep"></div>
+      <div class="radar-crosshair-h"></div>
+      <div class="radar-crosshair-v"></div>
+    </div>
+
+    <div class="container hero-content">
+      <div class="hero-badge reveal-fade">
+        <span class="status-dot"></span>
+        <span>SOVEREIGN DEFENCE AI &amp; AUTONOMOUS SYSTEMS ARCHITECTURE</span>
+      </div>
+
+      <!-- Animated Official Logo Display -->
+      <div class="hero-logo-showcase reveal-fade">
+        <img src="NextGenAIDefence%20Technologies%20Logo.png" alt="NextGenAI Defence Technologies Official Crest" class="hero-logo-img">
+      </div>
+
+      <h1 class="hero-title reveal-fade">
+        ENGINEERING INTELLIGENT <span class="text-gradient-cyan">DEFENCE.</span>
+      </h1>
+
+      <p class="hero-subtitle reveal-fade">
+        Building the next generation of AI-powered defence intelligence, autonomous systems, cybersecurity, and advanced security technologies.
+      </p>
+
+      <div class="hero-cta-group reveal-fade">
+        <a href="#technologies" class="btn btn-primary">
+          <span>Explore Our Technologies</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#contact" class="btn btn-secondary">
+          <span>Contact Our Team</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        </a>
+      </div>
+
+      <!-- Telemetry Indicator Cards -->
+      <div class="hero-telemetry-grid reveal-fade">
+        <div class="hero-telemetry-card">
+          <div class="telemetry-card-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="m4.93 4.93 4.24 4.24"/><path d="m14.83 9.17 4.24-4.24"/><path d="m14.83 14.83 4.24 4.24"/><path d="m9.17 14.83-4.24 4.24"/></svg>
+          </div>
+          <div class="telemetry-card-content">
+            <span class="telemetry-card-title">SATELLITE SENSING</span>
+            <span class="telemetry-card-value">Multi-Spectral SAR &amp; Optical</span>
+          </div>
+        </div>
+
+        <div class="hero-telemetry-card">
+          <div class="telemetry-card-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
+          </div>
+          <div class="telemetry-card-content">
+            <span class="telemetry-card-title">MULTI-AGENT CORE</span>
+            <span class="telemetry-card-value">Autonomous Triage &amp; Fusion</span>
+          </div>
+        </div>
+
+        <div class="hero-telemetry-card">
+          <div class="telemetry-card-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <div class="telemetry-card-content">
+            <span class="telemetry-card-title">CYBER DEFENCE</span>
+            <span class="telemetry-card-value">NextGenAI Sentinel SOC</span>
+          </div>
+        </div>
+
+        <div class="hero-telemetry-card">
+          <div class="telemetry-card-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+          </div>
+          <div class="telemetry-card-content">
+            <span class="telemetry-card-title">TACTICAL EDGE</span>
+            <span class="telemetry-card-value">Air-Gapped &amp; Offline Ready</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       4. COMPANY INTRODUCTION (SPLIT-SCREEN LAYOUT)
+       ========================================================================== -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="intro-grid">
+        <!-- Left Column: Mission & Identity -->
+        <div class="intro-content-left reveal-fade">
+          <div class="section-tag">COMPANY INTRODUCTION</div>
+          <h2 class="section-title">
+            Engineering the Future of <span class="text-cyan">Defence Technology.</span>
+          </h2>
+          <p class="intro-lead-text">
+            NextGenAI Defence Technologies is an emerging technology and AI engineering initiative focused on developing intelligent software platforms, AI-driven security systems, autonomous technology research, and advanced digital infrastructure.
+          </p>
+          <p class="intro-body-text">
+            In an era where geopolitical landscapes shift with digital speed and electromagnetic friction, conventional defensive doctrines are insufficient. We build sovereign, modular AI systems that combine multi-spectral sensor feeds, satellite imagery, and agentic workflows to deliver decisive situational awareness to authorized government, defence, and corporate enterprise partners.
+          </p>
+
+          <div class="intro-pillars">
+            <div class="intro-pillar-item">
+              <div class="intro-pillar-icon">&#10003;</div>
+              <div class="intro-pillar-text">
+                <h4>Software-Defined Intelligence</h4>
+                <p>Pure cognitive superiority built into sovereign, modular platforms.</p>
+              </div>
+            </div>
+            <div class="intro-pillar-item">
+              <div class="intro-pillar-icon">&#10003;</div>
+              <div class="intro-pillar-text">
+                <h4>Defensive Robotics Autonomy</h4>
+                <p>Multi-sensor perception and counter-drone tracking under human supervision.</p>
+              </div>
+            </div>
+            <div class="intro-pillar-item">
+              <div class="intro-pillar-icon">&#10003;</div>
+              <div class="intro-pillar-text">
+                <h4>Zero External Cloud Leakage</h4>
+                <p>Air-gapped on-premises architectures safeguarding national data sovereignty.</p>
+              </div>
+            </div>
+            <div class="intro-pillar-item">
+              <div class="intro-pillar-icon">&#10003;</div>
+              <div class="intro-pillar-text">
+                <h4>Human-in-the-Loop Ethics</h4>
+                <p>Zero autonomous kinetic execution without certified officer authorization.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: Interactive Command Telemetry Screen -->
+        <div class="intro-content-right reveal-fade">
+          <div class="intro-hud-terminal">
+            <div class="terminal-header">
+              <div class="terminal-dots">
+                <span class="terminal-dot"></span>
+                <span class="terminal-dot"></span>
+                <span class="terminal-dot"></span>
+              </div>
+              <div class="terminal-title">NEXTGENAI // TELEMETRY CONSOLE v4.8</div>
+              <div class="terminal-badge">ACTIVE</div>
+            </div>
+            <div class="terminal-body">
+              <div class="terminal-row">
+                <span class="terminal-k">[MISSION DIRECTIVE]</span>
+                <span class="terminal-v">ENGINEER INTELLIGENT DEFENCE</span>
+              </div>
+              <div class="terminal-row">
+                <span class="terminal-k">[INGESTION CHANNELS]</span>
+                <span class="terminal-v">SAR / EO / RF / SCADA / SIEM</span>
+              </div>
+              <div class="terminal-row">
+                <span class="terminal-k">[INFERENCE LATENCY]</span>
+                <span class="terminal-v v-green">&lt; 14ms (EDGE QUANTIZED)</span>
+              </div>
+              <div class="terminal-row">
+                <span class="terminal-k">[ENCRYPTION STANDARD]</span>
+                <span class="terminal-v">FIPS 140-3 LEVEL 4 COMPATIBLE</span>
+              </div>
+              <div class="terminal-row">
+                <span class="terminal-k">[AIR-GAP INTEGRITY]</span>
+                <span class="terminal-v v-green">100% DISCONNECTED LOCAL RUNTIME</span>
+              </div>
+
+              <div class="terminal-divider"></div>
+
+              <div class="terminal-graph-wrap">
+                <div style="display: flex; justify-content: space-between; font-size: 0.72rem; margin-bottom: 6px;">
+                  <span>MULTI-SPECTRAL SENSOR THROUGHPUT</span>
+                  <span class="text-cyan">94.8% NOMINAL</span>
+                </div>
+                <div class="terminal-graph-bars">
+                  <div class="t-bar" style="height: 65%;"></div>
+                  <div class="t-bar" style="height: 82%;"></div>
+                  <div class="t-bar" style="height: 48%;"></div>
+                  <div class="t-bar" style="height: 95%;"></div>
+                  <div class="t-bar" style="height: 70%;"></div>
+                  <div class="t-bar" style="height: 88%;"></div>
+                  <div class="t-bar" style="height: 60%;"></div>
+                  <div class="t-bar" style="height: 92%;"></div>
+                  <div class="t-bar" style="height: 76%;"></div>
+                  <div class="t-bar" style="height: 84%;"></div>
+                </div>
+              </div>
+
+              <div style="margin-top: 18px; font-size: 0.75rem; color: var(--text-muted);">
+                &gt; SYSTEM MONITOR: All autonomous agent routines responding with zero anomalies. Ready for technical briefing.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       5. TECHNOLOGY DIVISIONS — MAIN WEBSITE SECTION (9 DIVISIONS)
+       ========================================================================== -->
+  <section class="section" id="technologies" style="background: var(--bg-secondary);">
+    <div class="container">
+      <div class="section-header reveal-fade">
+        <div class="section-tag">OPERATIONAL PORTFOLIO</div>
+        <h2 class="section-title">
+          Technology <span class="text-gradient-cyan">Divisions</span>
+        </h2>
+        <p class="section-subtitle">
+          Nine dedicated technological divisions delivering intelligent software, autonomous system research, cybersecurity, advanced sensing, and lawful AI investigation architectures.
+        </p>
+      </div>
+
+      <div class="divisions-grid">
+
+        <!-- Division 01 -->
+        <article class="division-card reveal-fade">
+          <div class="card-media">
+            <span class="card-number-badge">DIVISION 01</span>
+            <span class="card-classification">INTELLIGENCE</span>
+            <img src="1.%20Agentic%20AI%20Defence%20Intelligence.png" alt="Agentic AI Defence Intelligence" class="card-img" loading="lazy">
+            <div class="card-overlay"></div>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Agentic AI Defence Intelligence</h3>
+            <p class="card-desc">
+              Advanced situational awareness platform synthesizing authorized satellite imagery, sensor streams, security reports, and public telemetry to detect emerging threats.
+            </p>
+            <div class="card-features-list">
+              <span class="feature-pill">Satellite Imagery Analysis</span>
+              <span class="feature-pill">Real-Time Threat Monitoring</span>
+              <span class="feature-pill">Multi-Agent AI Analysis</span>
+              <span class="feature-pill">Anomaly Detection</span>
+              <span class="feature-pill">Crisis Forecasting</span>
+              <span class="feature-pill">Evidence Reports</span>
+              <span class="feature-pill">Multilingual Intel</span>
+              <span class="feature-pill">Secure Comms</span>
+            </div>
+            <div class="card-footer">
+              <span class="mono" style="font-size: 0.72rem; color: var(--green-tactical);">&#9679; MULTI-SOURCE FUSION</span>
+              <button class="card-explore-btn" data-explore-div="div1">
+                <span>Explore Technology</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Division 02 -->
+        <article class="division-card reveal-fade">
+          <div class="card-media">
+            <span class="card-number-badge">DIVISION 02</span>
+            <span class="card-classification">AUTONOMY &amp; C-UAS</span>
+            <img src="2.%20Autonomous%20Systems%20Counter-Drone%20Security.png" alt="Autonomous Systems & Counter-Drone Security" class="card-img" loading="lazy">
+            <div class="card-overlay"></div>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Autonomous Systems &amp; Defensive Robotics</h3>
+            <p class="card-desc">
+              Intelligent perception and coordination software making uncrewed aerial and ground platforms safer, resilient, and collaborative under human supervision.
+            </p>
+            <div class="card-features-list">
+              <span class="feature-pill">Counter-Drone Detection</span>
+              <span class="feature-pill">Autonomous Inspection</span>
+              <span class="feature-pill">Uncrewed Aircraft Tracking</span>
+              <span class="feature-pill">Search-and-Rescue Autonomy</span>
+              <span class="feature-pill">Perimeter Security</span>
+              <span class="feature-pill">Multi-Robot Coordination</span>
+              <span class="feature-pill">GPS-Denied Navigation</span>
+            </div>
+            <div class="card-footer">
+              <span class="mono" style="font-size: 0.72rem; color: var(--cyan-primary);">&#9679; C-UAS SENSOR FUSION</span>
+              <button class="card-explore-btn" data-explore-div="div2">
+                <span>Explore Technology</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Division 03 -->
+        <article class="division-card reveal-fade">
+          <div class="card-media">
+            <span class="card-number-badge">DIVISION 03</span>
+            <span class="card-classification">SENSING &amp; EW</span>
+            <img src="3.%20Advanced%20Sensing%20and%20Electronic%20Protection.png" alt="Advanced Sensing and Electronic Protection" class="card-img" loading="lazy">
+            <div class="card-overlay"></div>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Advanced Sensing &amp; Electronic Protection</h3>
+            <p class="card-desc">
+              Next-generation multi-spectral sensor fusion, radar analytics, and electronic protection monitoring to preserve situational awareness in contested spectrums.
+            </p>
+            <div class="card-features-list">
+              <span class="feature-pill">AI Sensor Fusion</span>
+              <span class="feature-pill">Radar &amp; Optical Analytics</span>
+              <span class="feature-pill">Electronic Protection</span>
+              <span class="feature-pill">Communication Resilience</span>
+              <span class="feature-pill">GPS-Denied Simulation</span>
+              <span class="feature-pill">Predictive Diagnostics</span>
+              <span class="feature-pill">Advanced Sensing R&amp;D</span>
+            </div>
+            <div class="card-footer">
+              <span class="mono" style="font-size: 0.72rem; color: var(--green-tactical);">&#9679; SPECTRUM RESILIENCE</span>
+              <button class="card-explore-btn" data-explore-div="div3">
+                <span>Explore Technology</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Division 04 -->
+        <article class="division-card reveal-fade">
+          <div class="card-media">
+            <span class="card-number-badge">DIVISION 04</span>
+            <span class="card-classification">CYBER DEFENCE</span>
+            <img src="4.%20AI-Powered%20Security%20Operations%20Centre.png" alt="AI-Powered Security Operations Centre - NextGenAI Sentinel" class="card-img" loading="lazy">
+            <div class="card-overlay"></div>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">AI-Powered SOC (NextGenAI Sentinel)</h3>
+            <p class="card-desc">
+              Autonomous agentic security operations platform deploying dedicated AI teams for alert triage, investigation, and defensive response with mandatory human authorization.
+            </p>
+            <div class="card-features-list">
+              <span class="feature-pill">AI Threat Detection</span>
+              <span class="feature-pill">Agentic Investigations</span>
+              <span class="feature-pill">Network Monitoring</span>
+              <span class="feature-pill">Endpoint EDR Ingestion</span>
+              <span class="feature-pill">Threat Intelligence</span>
+              <span class="feature-pill">Automated Workflows</span>
+              <span class="feature-pill">Human Approval Gates</span>
+              <span class="feature-pill">On-Premises Runtime</span>
+            </div>
+            <div class="card-footer">
+              <span class="mono" style="font-size: 0.72rem; color: var(--cyan-primary);">&#9679; MULTI-AGENT SENTINEL</span>
+              <button class="card-explore-btn" data-explore-div="div4">
+                <span>Explore Technology</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Division 05 -->
+        <article class="division-card reveal-fade">
+          <div class="card-media">
+            <span class="card-number-badge">DIVISION 05</span>
+            <span class="card-classification">RESPONSIBLE AI</span>
+            <img src="5.%20AI%20for%20Child%20Protection%20and%20Criminal%20Activity%20Detection.png" alt="AI for Child Protection and Criminal Activity Detection" class="card-img" loading="lazy">
+            <div class="card-overlay"></div>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">AI Child Protection &amp; Crime Detection</h3>
+            <p class="card-desc">
+              Responsible, privacy-first AI assistance developed exclusively for authorized organizations to prioritize investigation queues, protect victims, and preserve evidence integrity.
+            </p>
+            <div class="card-features-list">
+              <span class="feature-pill">Content Moderation</span>
+              <span class="feature-pill">Detection &amp; Classification</span>
+              <span class="feature-pill">Smart Prioritization</span>
+              <span class="feature-pill">Secure Evidence Records</span>
+              <span class="feature-pill">Cryptographic Audits</span>
+              <span class="feature-pill">Privacy-by-Design</span>
+              <span class="feature-pill">Human Review Enforced</span>
+            </div>
+            <div class="card-footer">
+              <span class="mono" style="font-size: 0.72rem; color: var(--green-tactical);">&#9679; ETHICAL SAFEGUARDS</span>
+              <button class="card-explore-btn" data-explore-div="div5">
+                <span>Explore Technology</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Division 06 -->
+        <article class="division-card reveal-fade">
+          <div class="card-media">
+            <span class="card-number-badge">DIVISION 06</span>
+            <span class="card-classification">FORENSIC INTEL</span>
+            <img src="6.%20AI%20Drug-Trafficking%20Investigation%20Support.png" alt="AI Drug-Trafficking Investigation Support" class="card-img" loading="lazy">
+            <div class="card-overlay"></div>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">AI Drug-Trafficking Investigation Support</h3>
+            <p class="card-desc">
+              Lawful investigation platform synthesizing maritime manifests, freight shipping anomalies, and financial flows to map trafficking networks and accelerate case preparation.
+            </p>
+            <div class="card-features-list">
+              <span class="feature-pill">Logistics Anomaly Detection</span>
+              <span class="feature-pill">Financial Record Analysis</span>
+              <span class="feature-pill">Supply-Chain Intelligence</span>
+              <span class="feature-pill">Relationship Graphs</span>
+              <span class="feature-pill">Evidence-Linked Reporting</span>
+              <span class="feature-pill">Authorized Ingestion</span>
+            </div>
+            <div class="card-footer">
+              <span class="mono" style="font-size: 0.72rem; color: var(--cyan-primary);">&#9679; INTER-AGENCY MAPPING</span>
+              <button class="card-explore-btn" data-explore-div="div6">
+                <span>Explore Technology</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Division 07 -->
+        <article class="division-card reveal-fade">
+          <div class="card-media">
+            <span class="card-number-badge">DIVISION 07</span>
+            <span class="card-classification">CYBERCRIME FORENSICS</span>
+            <img src="7.%20AI%20Cybercrime%20Investigation%20Platform.png" alt="AI Cybercrime Investigation Platform" class="card-img" loading="lazy">
+            <div class="card-overlay"></div>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">AI Cybercrime Investigation Platform</h3>
+            <p class="card-desc">
+              Uncovering malicious cyber infrastructure, phishing waves, and lawful cryptocurrency tracing to assemble court-ready digital evidence dossiers.
+            </p>
+            <div class="card-features-list">
+              <span class="feature-pill">Phishing Wave Detection</span>
+              <span class="feature-pill">Fraud Investigation</span>
+              <span class="feature-pill">Identity Theft Analysis</span>
+              <span class="feature-pill">Digital Evidence Vault</span>
+              <span class="feature-pill">Malicious Infrastructure</span>
+              <span class="feature-pill">Crypto Ledger Tracing</span>
+              <span class="feature-pill">Coordinated Attack Tracking</span>
+            </div>
+            <div class="card-footer">
+              <span class="mono" style="font-size: 0.72rem; color: var(--green-tactical);">&#9679; CAMPAIGN FINGERPRINTING</span>
+              <button class="card-explore-btn" data-explore-div="div7">
+                <span>Explore Technology</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Division 08 -->
+        <article class="division-card reveal-fade">
+          <div class="card-media">
+            <span class="card-number-badge">DIVISION 08</span>
+            <span class="card-classification">DEFENCE INNOVATION</span>
+            <img src="8.%20Defense%20and%20Security.png" alt="Defence & Security Innovation" class="card-img" loading="lazy">
+            <div class="card-overlay"></div>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Defence &amp; Security Innovation</h3>
+            <p class="card-desc">
+              Ten strategic research and deployment initiatives advancing national readiness, infrastructure shielding, and mission continuity.
+            </p>
+            <div class="initiatives-compact-grid">
+              <div class="initiative-compact-item">1. AI Defence Intel Assistant</div>
+              <div class="initiative-compact-item">2. Satellite Change Detection</div>
+              <div class="initiative-compact-item">3. Counter-Drone Monitoring</div>
+              <div class="initiative-compact-item">4. Military Logistics Intel</div>
+              <div class="initiative-compact-item">5. Predictive Maintenance AI</div>
+              <div class="initiative-compact-item">6. Comms Health Monitoring</div>
+              <div class="initiative-compact-item">7. Critical Infrastructure</div>
+              <div class="initiative-compact-item">8. Defence Cyber Range</div>
+              <div class="initiative-compact-item">9. AI Emergency Response</div>
+              <div class="initiative-compact-item">10. Supply-Chain Risk Intel</div>
+            </div>
+            <div class="card-footer">
+              <span class="mono" style="font-size: 0.72rem; color: var(--cyan-primary);">&#9679; 10 STRATEGIC INITIATIVES</span>
+              <button class="card-explore-btn" data-explore-div="div8">
+                <span>Explore Technology</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Division 09 -->
+        <article class="division-card reveal-fade">
+          <div class="card-media">
+            <span class="card-number-badge">DIVISION 09</span>
+            <span class="card-classification">UNIFIED ARCHITECTURE</span>
+            <img src="9.%20Defence%20Intelligence%20Stack.png" alt="NextGenAI Defence Intelligence Stack" class="card-img" loading="lazy">
+            <div class="card-overlay"></div>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">NextGenAI Defence Intelligence Stack</h3>
+            <p class="card-desc">
+              The unified six-layer technical architecture connecting raw sensor data to mission dashboards, operating with zero external reliance across air-gapped domains.
+            </p>
+            <div class="card-features-list">
+              <span class="feature-pill">Layer 1: Ingestion</span>
+              <span class="feature-pill">Layer 2: Processing</span>
+              <span class="feature-pill">Layer 3: AI Intelligence</span>
+              <span class="feature-pill">Layer 4: Security &amp; Control</span>
+              <span class="feature-pill">Layer 5: Applications</span>
+              <span class="feature-pill">Layer 6: Deployment</span>
+            </div>
+            <div class="card-footer">
+              <span class="mono" style="font-size: 0.72rem; color: var(--green-tactical);">&#9679; 6-TIER FOUNDATION</span>
+              <button class="card-explore-btn" data-explore-div="div9">
+                <span>Explore Technology</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </button>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       6. TECHNOLOGY ARCHITECTURE VISUALIZATION (THE STACK)
+       ========================================================================== -->
+  <section class="section architecture-section" id="stack">
+    <div class="container">
+      <div class="section-header reveal-fade">
+        <div class="section-tag tag-green">ENTERPRISE BLUEPRINT</div>
+        <h2 class="section-title">
+          The NextGenAI <span class="text-gradient-cyan">Defence Intelligence Stack</span>
+        </h2>
+        <p class="section-subtitle">
+          An interactive visualization of our sovereign 6-layer architecture engineered for high-throughput sensor fusion, agentic AI reasoning, and air-gapped defence deployments.
+        </p>
+      </div>
+
+      <div class="stack-container">
+        <!-- Left: Interactive 6-Layer Selector Deck -->
+        <div class="stack-layers-deck reveal-fade">
+          <div class="stack-layer-card active" data-layer-idx="0">
+            <div class="layer-info-left">
+              <div class="layer-num">01</div>
+              <div class="layer-text">
+                <h4>Layer 1: Data Ingestion</h4>
+                <p>Satellite, SAR, Sensor Logs, Radars, Public Threat Intel</p>
+              </div>
+            </div>
+            <div class="layer-status">
+              <span class="status-dot"></span>
+              <span>NOMINAL</span>
+            </div>
+          </div>
+
+          <div class="stack-layer-card" data-layer-idx="1">
+            <div class="layer-info-left">
+              <div class="layer-num">02</div>
+              <div class="layer-text">
+                <h4>Layer 2: Data Processing</h4>
+                <p>Image Analytics, Sensor Fusion, Normalization, Anomaly Filtering</p>
+              </div>
+            </div>
+            <div class="layer-status">
+              <span class="status-dot"></span>
+              <span>NOMINAL</span>
+            </div>
+          </div>
+
+          <div class="stack-layer-card" data-layer-idx="2">
+            <div class="layer-info-left">
+              <div class="layer-num">03</div>
+              <div class="layer-text">
+                <h4>Layer 3: AI Intelligence</h4>
+                <p>Agentic Swarms, RAG, Predictive Analytics, Evidence Linkage</p>
+              </div>
+            </div>
+            <div class="layer-status">
+              <span class="status-dot"></span>
+              <span>NOMINAL</span>
+            </div>
+          </div>
+
+          <div class="stack-layer-card" data-layer-idx="3">
+            <div class="layer-info-left">
+              <div class="layer-num">04</div>
+              <div class="layer-text">
+                <h4>Layer 4: Security &amp; Control</h4>
+                <p>RBAC/ABAC, Quantum Encryption, Immutable Audit, Human Gates</p>
+              </div>
+            </div>
+            <div class="layer-status">
+              <span class="status-dot"></span>
+              <span>ZERO TRUST</span>
+            </div>
+          </div>
+
+          <div class="stack-layer-card" data-layer-idx="4">
+            <div class="layer-info-left">
+              <div class="layer-num">05</div>
+              <div class="layer-text">
+                <h4>Layer 5: Customer Applications</h4>
+                <p>SOC Sentinel, Satellite Suite, Infrastructure COP, Logistics</p>
+              </div>
+            </div>
+            <div class="layer-status">
+              <span class="status-dot"></span>
+              <span>TACTICAL HUD</span>
+            </div>
+          </div>
+
+          <div class="stack-layer-card" data-layer-idx="5">
+            <div class="layer-info-left">
+              <div class="layer-num">06</div>
+              <div class="layer-text">
+                <h4>Layer 6: Deployment Infrastructure</h4>
+                <p>Private Sovereign Cloud, On-Premises, Air-Gapped Field Edge</p>
+              </div>
+            </div>
+            <div class="layer-status">
+              <span class="status-dot"></span>
+              <span>AIR-GAPPED</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Dynamic Layer Telemetry Inspector -->
+        <div class="stack-detail-panel reveal-fade">
+          <span class="stack-detail-tag" id="stackLayerTag">LAYER 01 // HIGH THROUGHPUT</span>
+          <h3 class="stack-detail-title" id="stackLayerTitle">Data Ingestion: Collect Trusted Data from Multiple Sources</h3>
+          <p class="stack-detail-desc" id="stackLayerDesc">
+            Ingests structured and unstructured data from satellite imagery providers, military logs, RF radars, optical cameras, infrastructure sensors, and authorized threat intelligence streams.
+          </p>
+
+          <h4 style="font-size: 0.95rem; letter-spacing: 0.1em; color: var(--cyan-primary); margin-bottom: 14px;">
+            SUBSYSTEM COMPONENT NODES
+          </h4>
+          <div class="stack-nodes-list" id="stackLayerNodes">
+            <!-- Dynamically populated by JS -->
+          </div>
+
+          <div style="display: flex; align-items: center; justify-content: space-between; border-top: 1px solid var(--border-subtle); padding-top: 18px;">
+            <span class="mono" style="font-size: 0.72rem; color: var(--text-muted);">
+              DATA LINEAGE: CRYPTOGRAPHICALLY ATTESTED
+            </span>
+            <button class="btn btn-secondary btn-sm" data-explore-div="div9">
+              <span>View Full Division Specification</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Architectural Schematic Banner -->
+      <div class="stack-visual-banner reveal-fade">
+        <img src="9.%20Defence%20Intelligence%20Stack.png" alt="Full NextGenAI Defence Intelligence Stack Diagram" class="stack-banner-img" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       7. RESEARCH & DEVELOPMENT (9 R&D DOMAINS)
+       ========================================================================== -->
+  <section class="section" id="rd">
+    <div class="container">
+      <div class="section-header reveal-fade">
+        <div class="section-tag">LABORATORY &amp; SCIENTIFIC INITIATIVES</div>
+        <h2 class="section-title">
+          Research &amp; <span class="text-green">Development</span>
+        </h2>
+        <p class="section-subtitle">
+          Pioneering advanced defensive computer vision, agentic architectures, satellite analytics, and GPS-denied robotics to solve tomorrow's high-stakes security challenges.
+        </p>
+      </div>
+
+      <div class="rd-grid">
+
+        <!-- R&D 01 -->
+        <div class="rd-card reveal-fade">
+          <div class="rd-header">
+            <div class="rd-icon-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+            </div>
+            <span class="rd-status-badge">ACTIVE R&amp;D</span>
+          </div>
+          <h3 class="rd-title">Agentic AI Research</h3>
+          <p class="rd-desc">
+            Designing self-governing multi-agent swarms equipped with goal-decomposition, consensus protocols, and verifiable formal verification for tactical problem solving.
+          </p>
+          <div class="rd-footer">
+            <span class="rd-readiness">MATURITY: <span>LAB PROTOTYPE</span></span>
+            <span class="mono" style="font-size: 0.72rem; color: var(--cyan-primary);">INITIATIVE #01</span>
+          </div>
+        </div>
+
+        <!-- R&D 02 -->
+        <div class="rd-card reveal-fade">
+          <div class="rd-header">
+            <div class="rd-icon-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+            </div>
+            <span class="rd-status-badge">VALIDATION</span>
+          </div>
+          <h3 class="rd-title">Computer Vision</h3>
+          <p class="rd-desc">
+            Deep neural networks optimized for extreme low-light, thermal infrared, and optical occlusion, executing rapid object categorization with minimal compute overhead.
+          </p>
+          <div class="rd-footer">
+            <span class="rd-readiness">MATURITY: <span>SIMULATION TEST</span></span>
+            <span class="mono" style="font-size: 0.72rem; color: var(--cyan-primary);">INITIATIVE #02</span>
+          </div>
+        </div>
+
+        <!-- R&D 03 -->
+        <div class="rd-card reveal-fade">
+          <div class="rd-header">
+            <div class="rd-icon-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+            </div>
+            <span class="rd-status-badge">ACTIVE R&amp;D</span>
+          </div>
+          <h3 class="rd-title">Satellite Image Analytics</h3>
+          <p class="rd-desc">
+            Automated synthetic aperture radar (SAR) and high-resolution optical difference modeling detecting ground disturbance, infrastructure modifications, and vessel tracks.
+          </p>
+          <div class="rd-footer">
+            <span class="rd-readiness">MATURITY: <span>ACTIVE INGESTION</span></span>
+            <span class="mono" style="font-size: 0.72rem; color: var(--cyan-primary);">INITIATIVE #03</span>
+          </div>
+        </div>
+
+        <!-- R&D 04 -->
+        <div class="rd-card reveal-fade">
+          <div class="rd-header">
+            <div class="rd-icon-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="3 11 22 2 13 21 11 13 3 11"/></svg>
+            </div>
+            <span class="rd-status-badge">RESEARCH STAGE</span>
+          </div>
+          <h3 class="rd-title">Autonomous Navigation Research</h3>
+          <p class="rd-desc">
+            Visual-inertial odometry (VIO) and terrain-referenced navigation algorithms allowing uncrewed robotic platforms to orient safely in completely GPS-denied environments.
+          </p>
+          <div class="rd-footer">
+            <span class="rd-readiness">MATURITY: <span>HARDWARE TESTBED</span></span>
+            <span class="mono" style="font-size: 0.72rem; color: var(--cyan-primary);">INITIATIVE #04</span>
+          </div>
+        </div>
+
+        <!-- R&D 05 -->
+        <div class="rd-card reveal-fade">
+          <div class="rd-header">
+            <div class="rd-icon-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="10" rx="2"/><circle cx="12" cy="5" r="2"/><path d="M12 7v4"/><line x1="8" y1="16" x2="8.01" y2="16"/><line x1="16" y1="16" x2="16.01" y2="16"/></svg>
+            </div>
+            <span class="rd-status-badge">ACTIVE R&amp;D</span>
+          </div>
+          <h3 class="rd-title">Defensive Robotics</h3>
+          <p class="rd-desc">
+            Coordinated autonomous inspection and perimeter sentinel platforms that monitor sensitive defense facilities and utility nodes under strict human guidance.
+          </p>
+          <div class="rd-footer">
+            <span class="rd-readiness">MATURITY: <span>ALGORITHM PROTOTYPE</span></span>
+            <span class="mono" style="font-size: 0.72rem; color: var(--cyan-primary);">INITIATIVE #05</span>
+          </div>
+        </div>
+
+        <!-- R&D 06 -->
+        <div class="rd-card reveal-fade">
+          <div class="rd-header">
+            <div class="rd-icon-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            </div>
+            <span class="rd-status-badge">ACTIVE R&amp;D</span>
+          </div>
+          <h3 class="rd-title">Cybersecurity Automation</h3>
+          <p class="rd-desc">
+            Autonomous alert orchestration combining semantic log parsing, rapid indicator extraction, and defensive runbook execution via the Sentinel agent suite.
+          </p>
+          <div class="rd-footer">
+            <span class="rd-readiness">MATURITY: <span>CORE ARCHITECTURE</span></span>
+            <span class="mono" style="font-size: 0.72rem; color: var(--cyan-primary);">INITIATIVE #06</span>
+          </div>
+        </div>
+
+        <!-- R&D 07 -->
+        <div class="rd-card reveal-fade">
+          <div class="rd-header">
+            <div class="rd-icon-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="m4.93 4.93 4.24 4.24"/><path d="m14.83 9.17 4.24-4.24"/><path d="m14.83 14.83 4.24 4.24"/><path d="m9.17 14.83-4.24 4.24"/></svg>
+            </div>
+            <span class="rd-status-badge">VALIDATION</span>
+          </div>
+          <h3 class="rd-title">Sensor Fusion</h3>
+          <p class="rd-desc">
+            Mathematical synthesis of asynchronous RF, radar, optical, and acoustic telemetry feeds into a single, high-fidelity spatial representation of the battlespace.
+          </p>
+          <div class="rd-footer">
+            <span class="rd-readiness">MATURITY: <span>SIMULATION SUITE</span></span>
+            <span class="mono" style="font-size: 0.72rem; color: var(--cyan-primary);">INITIATIVE #07</span>
+          </div>
+        </div>
+
+        <!-- R&D 08 -->
+        <div class="rd-card reveal-fade">
+          <div class="rd-header">
+            <div class="rd-icon-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+            </div>
+            <span class="rd-status-badge">ACTIVE R&amp;D</span>
+          </div>
+          <h3 class="rd-title">Predictive Analytics</h3>
+          <p class="rd-desc">
+            Time-series forecasting predicting mechanical stress, component failures, and supply chain choke points across aerospace fleets and heavy ground systems.
+          </p>
+          <div class="rd-footer">
+            <span class="rd-readiness">MATURITY: <span>TELEMETRY MODEL</span></span>
+            <span class="mono" style="font-size: 0.72rem; color: var(--cyan-primary);">INITIATIVE #08</span>
+          </div>
+        </div>
+
+        <!-- R&D 09 -->
+        <div class="rd-card reveal-fade">
+          <div class="rd-header">
+            <div class="rd-icon-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"/><rect x="9" y="9" width="6" height="6"/><line x1="9" y1="1" x2="9" y2="4"/><line x1="15" y1="1" x2="15" y2="4"/><line x1="9" y1="20" x2="9" y2="23"/><line x1="15" y1="20" x2="15" y2="23"/><line x1="20" y1="9" x2="23" y2="9"/><line x1="20" y1="14" x2="23" y2="14"/><line x1="1" y1="9" x2="4" y2="9"/><line x1="1" y1="14" x2="4" y2="14"/></svg>
+            </div>
+            <span class="rd-status-badge">CORE MILESTONE</span>
+          </div>
+          <h3 class="rd-title">Offline &amp; Edge AI</h3>
+          <p class="rd-desc">
+            Model distillation, 4-bit quantization, and specialized runtime engines enabling large-scale multi-modal intelligence to run smoothly on rugged tactical hardware with zero internet access.
+          </p>
+          <div class="rd-footer">
+            <span class="rd-readiness">MATURITY: <span>EMBEDDED BENCHMARK</span></span>
+            <span class="mono" style="font-size: 0.72rem; color: var(--cyan-primary);">INITIATIVE #09</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       8. WHY NEXTGENAI? (6 VALUE PILLARS)
+       ========================================================================== -->
+  <section class="section" id="why" style="background: var(--bg-secondary);">
+    <div class="container">
+      <div class="section-header reveal-fade">
+        <div class="section-tag">ENGINEERING ADVANTAGE</div>
+        <h2 class="section-title">
+          Why <span class="text-gradient-cyan">NextGenAI?</span>
+        </h2>
+        <p class="section-subtitle">
+          Six foundational architectural principles that set our defence engineering solutions apart from conventional commercial software.
+        </p>
+      </div>
+
+      <div class="why-grid">
+        <div class="why-card reveal-fade">
+          <div class="why-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+          </div>
+          <h3>AI-First Engineering</h3>
+          <p>
+            Rather than retrofitting AI onto legacy systems, our entire platform is natively constructed around autonomous agent teams, neural retrieval, and deep perception layers.
+          </p>
+        </div>
+
+        <div class="why-card reveal-fade">
+          <div class="why-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+          </div>
+          <h3>Intelligence-Driven Security</h3>
+          <p>
+            Proactive anomaly detection, multi-source sensor fusion, and predictive threat scoring transform passive defense postures into anticipatory operational advantage.
+          </p>
+        </div>
+
+        <div class="why-card reveal-fade">
+          <div class="why-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h3>Human-Controlled Systems</h3>
+          <p>
+            Strict ethical safeguards ensure autonomous capabilities serve as high-speed decision support tools. All critical kinetic, judicial, and interdiction actions remain under human authority.
+          </p>
+        </div>
+
+        <div class="why-card reveal-fade">
+          <div class="why-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+          </div>
+          <h3>Secure Infrastructure</h3>
+          <p>
+            Zero-trust architecture with end-to-end encryption, cryptographic audit logging, and full isolation from external commercial telemetry to preserve national secrecy.
+          </p>
+        </div>
+
+        <div class="why-card reveal-fade">
+          <div class="why-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+          </div>
+          <h3>Modular Technology Architecture</h3>
+          <p>
+            Decoupled microservices and open sensor abstraction layers allow rapid integration with existing radar networks, SIEM datalakes, and robotic hardware platforms.
+          </p>
+        </div>
+
+        <div class="why-card reveal-fade">
+          <div class="why-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
+          </div>
+          <h3>Enterprise Deployment Flexibility</h3>
+          <p>
+            Deploy effortlessly across sovereign government clouds, air-gapped on-premises server clusters, or low-power rugged edge laptops operating in disconnected zones.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       9. CONTACT SECTION — PREMIUM DARK ENTERPRISE PORTAL
+       ========================================================================== -->
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      <div class="contact-wrap reveal-fade">
+        <div class="contact-grid">
+          <!-- Left Info Column -->
+          <div class="contact-info-block">
+            <div class="section-tag tag-green">DIRECT STRATEGIC ENGAGEMENT</div>
+            <h2>LET'S ENGINEER THE FUTURE <span class="text-gradient-cyan">TOGETHER.</span></h2>
+            <p>
+              Connect with NextGenAI Defence Technologies to discuss enterprise solutions, AI research, technology partnerships, and business opportunities.
+            </p>
+
+            <div class="contact-details-list">
+              <div class="contact-detail-row">
+                <div class="contact-detail-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                </div>
+                <div class="contact-detail-meta">
+                  <span>OFFICIAL WHATSAPP CHANNEL</span>
+                  <strong>+92 306 0824762</strong>
+                </div>
+              </div>
+
+              <div class="contact-detail-row">
+                <div class="contact-detail-icon" style="background: var(--cyan-dim); border-color: var(--cyan-border); color: var(--cyan-primary);">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                </div>
+                <div class="contact-detail-meta">
+                  <span>DEVELOPER PORTFOLIO</span>
+                  <strong><a href="https://murtuzadeveloper.github.io/" target="_blank" rel="noopener" style="color: var(--cyan-primary); text-decoration: underline;">murtuzadeveloper.github.io</a></strong>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <a href="https://wa.me/923060824762" target="_blank" rel="noopener" class="btn btn-whatsapp" style="width: 100%; max-width: 320px;">
+                <svg class="btn-icon" viewBox="0 0 24 24"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2z"/></svg>
+                <span>Chat on WhatsApp Directly</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right Interactive Enquiry Form Builder -->
+          <div class="enquiry-card">
+            <h3 class="enquiry-card-title">Compose Strategic Enquiry</h3>
+            <p class="enquiry-card-desc">
+              Select your inquiry objective below. Your parameters will be structured into a technical WhatsApp dispatch to our team.
+            </p>
+
+            <div class="form-group">
+              <label class="form-label">Engagement Type</label>
+              <div class="enquiry-options-grid">
+                <button type="button" class="enquiry-option-btn active" data-intent="Contact Our Team">
+                  Contact Our Team
+                </button>
+                <button type="button" class="enquiry-option-btn" data-intent="Discuss a Technology">
+                  Discuss a Technology
+                </button>
+                <button type="button" class="enquiry-option-btn" data-intent="Partnership Enquiries">
+                  Partnership Enquiries
+                </button>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="enquiryName">Your Name / Title</label>
+              <input type="text" id="enquiryName" class="form-input" placeholder="e.g. Dr. Alexander Vance / Chief Technology Advisor">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="enquiryOrg">Organization / Agency</label>
+              <input type="text" id="enquiryOrg" class="form-input" placeholder="e.g. Defence Research Directorate">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="enquiryTech">Focus Technology Division</label>
+              <select id="enquiryTech" class="form-select">
+                <option value="General Defence AI Solutions">General Defence AI Solutions</option>
+                <option value="Division 01 — Agentic AI Defence Intelligence">Division 01 — Agentic AI Defence Intelligence</option>
+                <option value="Division 02 — Autonomous Systems & Defensive Robotics">Division 02 — Autonomous Systems & Defensive Robotics</option>
+                <option value="Division 03 — Advanced Sensing & Electronic Protection">Division 03 — Advanced Sensing & Electronic Protection</option>
+                <option value="Division 04 — NextGenAI Sentinel SOC Platform">Division 04 — NextGenAI Sentinel SOC Platform</option>
+                <option value="Division 05 — AI Child Protection & Crime Detection">Division 05 — AI Child Protection & Crime Detection</option>
+                <option value="Division 06 — AI Drug-Trafficking Investigation Support">Division 06 — AI Drug-Trafficking Investigation Support</option>
+                <option value="Division 07 — AI Cybercrime Investigation Platform">Division 07 — AI Cybercrime Investigation Platform</option>
+                <option value="Division 08 — Defence & Security Innovation (10 Initiatives)">Division 08 — Defence & Security Innovation (10 Initiatives)</option>
+                <option value="Division 09 — Defence Intelligence Stack Architecture">Division 09 — Defence Intelligence Stack Architecture</option>
+                <option value="R&D Collaboration / Joint Research">R&D Collaboration / Joint Research</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="enquiryMessage">Brief Requirements / Scope</label>
+              <textarea id="enquiryMessage" class="form-textarea" placeholder="Detail your project timeline, requirements, or deployment environment..."></textarea>
+            </div>
+
+            <button type="button" id="enquirySubmitBtn" class="btn btn-primary" style="width: 100%;">
+              <span>Launch WhatsApp Enquiry</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       10. DEDICATED TECHNOLOGY DETAIL MODAL SYSTEM
+       ========================================================================== -->
+  <div class="tech-modal-overlay" id="techModalOverlay" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="tech-modal">
+      <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close Technology Specification">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+
+      <!-- Media Visual Banner -->
+      <div class="modal-media-wrap">
+        <img id="modalImg" src="1.%20Agentic%20AI%20Defence%20Intelligence.png" alt="Technology Division Visual">
+      </div>
+
+      <!-- Content Wrap -->
+      <div class="modal-content-wrap">
+        <span class="modal-header-tag" id="modalTag">DIVISION 01 // INTELLIGENCE</span>
+        <h2 class="modal-title" id="modalTitle">Agentic AI Defence Intelligence</h2>
+        <p class="mono" style="color: var(--cyan-primary); font-size: 0.95rem; margin-bottom: 20px;" id="modalSubtitle">
+          Turning Intelligence into Strategic Advantage
+        </p>
+        <p class="modal-overview" id="modalOverview">
+          Detailed technical overview description...
+        </p>
+
+        <!-- Core Capabilities Section -->
+        <div class="modal-section-block">
+          <h4 class="modal-section-title">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            <span>CORE CAPABILITIES &amp; SPECIFICATIONS</span>
+          </h4>
+          <div class="modal-capabilities-grid" id="modalCapabilities">
+            <!-- Dynamically populated -->
+          </div>
+        </div>
+
+        <!-- Potential Applications Section -->
+        <div class="modal-section-block">
+          <h4 class="modal-section-title">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+            <span>POTENTIAL OPERATIONAL APPLICATIONS</span>
+          </h4>
+          <div class="modal-capabilities-grid" id="modalApplications">
+            <!-- Dynamically populated -->
+          </div>
+        </div>
+
+        <!-- Potential Enterprise & Government Clients -->
+        <div class="modal-section-block">
+          <h4 class="modal-section-title">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            <span>TARGET ENTERPRISE &amp; GOVERNMENT PARTNERS</span>
+          </h4>
+          <div class="modal-target-clients" id="modalClients">
+            <!-- Dynamically populated -->
+          </div>
+        </div>
+
+        <!-- Modal Footer Actions -->
+        <div class="modal-footer">
+          <span class="mono" style="font-size: 0.75rem; color: var(--text-muted);">
+            SECURITY CLASSIFICATION: PROPOSED INITIATIVE SPECIFICATION
+          </span>
+          <a href="#" id="modalWhatsAppBtn" target="_blank" rel="noopener" class="btn btn-whatsapp">
+            <svg class="btn-icon" viewBox="0 0 24 24"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2z"/></svg>
+            <span>Contact About This Technology</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       10.5 WEBSITE LIVE VISITOR ANALYTICS DASHBOARD
+       ========================================================================== -->
+  <section class="visitor-analytics-section" id="visitorAnalyticsSection" aria-label="Website Live Analytics">
+    <div class="container">
+      <!-- Analytics Header Row -->
+      <div class="analytics-header-row">
+        <div class="analytics-header-titles">
+          <div class="analytics-tag">
+            <span>REAL-TIME TELEMETRY</span>
+          </div>
+          <h2 class="analytics-main-title">
+            WEBSITE LIVE <span>ANALYTICS</span>
+          </h2>
+          <p class="analytics-subtitle">
+            Real-time insights into our defence technology &amp; wholesale catalog traffic.
+          </p>
+        </div>
+
+        <!-- System Status Pill -->
+        <div>
+          <div class="analytics-status-pill status-live" id="analyticsStatusPill">
+            <span class="status-pulse-dot"></span>
+            <span id="analyticsStatusText">LIVE TRACKING</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4 Statistics Cards Grid -->
+      <div class="analytics-cards-grid">
+
+        <!-- Card 1: Total Visitors -->
+        <div class="analytics-stat-card">
+          <div class="stat-card-header">
+            <div class="stat-icon-wrap" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <span class="stat-metric-badge">ALL-TIME UNIQUE</span>
+          </div>
+          <div class="stat-card-label">TOTAL VISITORS</div>
+          <div class="stat-card-value">
+            <span class="counter-number" id="statTotalVisitors">0</span>
+          </div>
+          <div class="stat-card-footer">
+            <span class="stat-card-desc">Unique Browser Identities</span>
+            <span class="mono" style="color: var(--cyan-primary, #00D5FF); font-size: 0.68rem;">SECURE UUID</span>
+          </div>
+        </div>
+
+        <!-- Card 2: Today's Visitors -->
+        <div class="analytics-stat-card">
+          <div class="stat-card-header">
+            <div class="stat-icon-wrap" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            </div>
+            <span class="stat-metric-badge">PKT MIDNIGHT RESET</span>
+          </div>
+          <div class="stat-card-label">TODAY'S VISITORS</div>
+          <div class="stat-card-value">
+            <span class="counter-number" id="statTodayVisitors">0</span>
+          </div>
+          <div class="stat-card-footer">
+            <span class="stat-card-desc" id="statPktDateDesc">Date: PKT (Active)</span>
+            <span class="mono" style="color: var(--green-tactical, #39FF88); font-size: 0.68rem;">PKT (UTC+5)</span>
+          </div>
+        </div>
+
+        <!-- Card 3: Online Visitors -->
+        <div class="analytics-stat-card card-online">
+          <div class="stat-card-header">
+            <div class="stat-icon-wrap" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <span class="stat-metric-badge" style="color: var(--green-tactical, #39FF88);">5-MIN WINDOW</span>
+          </div>
+          <div class="stat-card-label">ONLINE NOW</div>
+          <div class="stat-card-value">
+            <span class="counter-number" id="statOnlineVisitors">1</span>
+          </div>
+          <div class="stat-card-footer">
+            <span class="stat-card-desc" id="onlineMetricLabel">Active Session Presence</span>
+            <span class="mono" style="color: var(--green-tactical, #39FF88); font-size: 0.68rem;">CONCURRENT</span>
+          </div>
+        </div>
+
+        <!-- Card 4: Total Page Views -->
+        <div class="analytics-stat-card">
+          <div class="stat-card-header">
+            <div class="stat-icon-wrap" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+            </div>
+            <span class="stat-metric-badge">CATALOG ENGAGEMENT</span>
+          </div>
+          <div class="stat-card-label">TOTAL PAGE VIEWS</div>
+          <div class="stat-card-value">
+            <span class="counter-number" id="statPageViews">0</span>
+          </div>
+          <div class="stat-card-footer">
+            <span class="stat-card-desc">All Verified Page Loads</span>
+            <span class="mono" style="color: var(--cyan-primary, #00D5FF); font-size: 0.68rem;">AGGREGATE</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- System Meta & Timezone Disclosure -->
+      <div class="analytics-system-meta">
+        <div class="meta-item">
+          <span>TRACKING ENGINE:</span>
+          <span id="metaTrackingEngine">COUNTAPI v1.2</span>
+        </div>
+        <div class="meta-item">
+          <span>TIMEZONE GOVERNANCE:</span>
+          <span>Asia/Karachi (PKT, UTC+5)</span>
+        </div>
+        <div class="meta-item">
+          <span>DATA PRIVACY:</span>
+          <span>ANONYMOUS TELEMETRY // ZERO PII COLLECTED</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       11. FOOTER
+       ========================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand-col">
+          <div class="footer-logo-row">
+            <img src="NextGenAIDefence%20Technologies%20Logo.png" alt="NextGenAI Defence Technologies" class="footer-logo-img">
+            <div>
+              <div class="footer-brand-title">NEXTGEN<span>AI</span></div>
+              <div class="footer-brand-sub">DEFENCE TECHNOLOGIES</div>
+            </div>
+          </div>
+          <div class="footer-tagline">Engineering Intelligent Defence. Securing Tomorrow.</div>
+          <p class="footer-desc">
+            Presenting NextGenAI as an ambitious defence technology and AI engineering company offering intelligent defence software, autonomous systems research, cybersecurity, advanced sensing, security intelligence, and AI-powered investigation solutions.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>NAVIGATION</h4>
+          <div class="footer-links-list">
+            <a href="#hero" class="footer-link">Home Portal</a>
+            <a href="#about" class="footer-link">About Initiative</a>
+            <a href="#technologies" class="footer-link">Technology Divisions</a>
+            <a href="#stack" class="footer-link">Defence Intelligence Stack</a>
+            <a href="#rd" class="footer-link">Research &amp; Development</a>
+            <a href="#why" class="footer-link">Why NextGenAI</a>
+            <a href="#contact" class="footer-link">Strategic Contact</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>TECHNOLOGIES</h4>
+          <div class="footer-links-list">
+            <a href="#technologies" class="footer-link">Agentic AI Defence Intel</a>
+            <a href="#technologies" class="footer-link">Autonomous Robotics &amp; C-UAS</a>
+            <a href="#technologies" class="footer-link">Advanced Sensing &amp; EW</a>
+            <a href="#technologies" class="footer-link">NextGenAI Sentinel SOC</a>
+            <a href="#technologies" class="footer-link">AI Child Protection Intel</a>
+            <a href="#technologies" class="footer-link">Drug-Trafficking Intel</a>
+            <a href="#technologies" class="footer-link">Cybercrime Platform</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>SECURE CONTACT</h4>
+          <div class="footer-contact-block">
+            <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.6;">
+              Reach our engineering and advisory team directly via WhatsApp for enterprise and defense technology briefings.
+            </p>
+            <a href="https://wa.me/923060824762" target="_blank" rel="noopener" class="footer-wa-btn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2z"/></svg>
+              <span>+92 306 0824762</span>
+            </a>
+            <span class="mono" style="font-size: 0.72rem; color: var(--text-muted); margin-top: 4px;">
+              HOURS: 24/7 ENQUIRY DISPATCH
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          Copyright &copy; NextGenAI Defence Technologies | Developed by 
+          <a href="https://murtuzadeveloper.github.io/" target="_blank" rel="noopener" class="footer-developer-link">Murtuza Developer</a>
+        </div>
+        <div class="mono" style="font-size: 0.75rem;">
+          SYSTEMS ARCHITECTURE // PROPOSED RESEARCH INITIATIVES // DEFENSIVE COMPLIANCE
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Core JavaScript -->
+  <script src="script.js"></script>
+
+  <!-- Live Visitor Analytics System -->
+  <script src="visitor-counter-config.js"></script>
+  <script src="visitor-counter.js"></script>
+</body>
+</html>
+
